@@ -62,14 +62,6 @@ function validateForm() {
     }else {
         setSuccess(passwordInput);
     }
-    //CONFIRM PASSWORD
-    if(confirmPasswordInput.value.trim()==''){
-        setError(confirmPasswordInput, 'Password can not be empty');
-    }else if(confirmPasswordInput.value !== passwordInput.value){
-        setError(confirmPasswordInput, 'Password does not match');
-    }else {
-        setSuccess(confirmPasswordInput);
-    }
 }
 
 function setError(element, errorMessage) {
